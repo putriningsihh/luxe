@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech2etc Ecommerce Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- bootstrap link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand mx-auto" href="../index.html"><img src="../frontend/images/bikestore.png" alt=""><h2>LUXE</h2></a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Page Content -->
+  <div class="container booking-page-1">
+    <div class="row">
+        <div class="col-12">
+            <img src="../frontend/images/STEPPER 2.png" class="mx-auto d-block stepper">
+        </div>
+        <div class="col-12">
+            <div class="text-center">
+                <h1 class="title-booking">Booking Information</h1>
+                <p class="subtitle-booking">Please fill up the blank fields below</p>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-5 ml-5">
+        <div class="col-md-5 mt-5">
+            <div class="col-12">
+              <h5 class="mb-4">Transer Pembayaran</h5>
+              <h6>Tax : 11% <br><br> Total : IDR 8.800.000 <br><br> Subtotal : IDR 9.768.000</h6>
+            </div>
+            <div class="col-12">
+              <img src="../frontend/images/ITEM BANK.png" class="mt-4 w-50">
+            </div>
+        </div>
+        <div class="col-md-2">
+            <img src="../frontend/images/garis.png" class="mx-auto d-block">
+        </div>
+        <div class="col-md-5 mt-4 form-booking">
+          <label>Upload Bukti Transer</label>
+          <div class="input-group">
+            <div class="custom-file mt-0">
+              <input type="file" class="custom-file-input" id="inputGroupFile01" aria-describedby="inputGroupFileAddon01">
+              <label class="custom-file-label mt-0">Browse file</label>
+            </div>
+          </div>
+          <label>Asal Bank</label>
+          <div class="input-group">
+              <input type="text" class="form-control" placeholder="Please type here ...">
+          </div>
+          <label>Nama Pengirim</label>
+          <div class="input-group">
+              <input type="text" class="form-control" placeholder="Please type here ...">
+          </div>
+        </div>
+    </div>
+    <div class="row mt-5 mb-5">
+        <div class="col-4"></div>
+        <div class="col-4">
+            <div class="text-center">
+                <a href="finish.html" type="button" class="btn btn-md btn-dark btn-block btn-continue-booking">Confirm Payment</a>
+                <a href="detail.html" type="button" class="btn btn-md btn-dark btn-block btn-cancel-booking mt-2">Cancel</a>
+            </div>
+        </div>
+        <div class="col-4"></div>
+    </div>
+  </div>
+  <!-- Akhir Page Content -->
+
+  <!-- footer -->
+ <footer id="footer">
+    <h1 class="text-center">LUXE</h1>
+    <p class="text-center">Online Services are Available, Contact Us Here.</p>
+    <div class="icons text-center">
+      <i><img src="../frontend/images/x putih.png" alt="" width="30px"></i>
+      <i><img src="../frontend/images/fb putih.png" alt="" width="30px"></i>
+      <i><img src="../frontend/images/putih ig.png" alt="" width="30px"></i>
+    </div>
+    <div class="copyright text-center">
+        © 2024 Copyright <strong><span>LUXE</span></strong>. All Rights Reserved
+    </div>
+  </footer>
+  <!-- footer -->
+  
+
+
+
+  <script src="../frontend/libraries/jquery-3.6.0.min.js"></script>
+  <script src="../frontend/libraries/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>
+
+<style>
+.container h2{
+    font-weight: bold;
+    font-family: "Ramaraja", serif;
+    font-weight: 400;
+    font-style: normal;  
+    align-items: center;
+    text-align: center;
+}
+    /* Header */
+ .logo h2{
+    font-weight: bold;
+        font-family: "Ramaraja", serif;
+        font-weight: 400;
+        font-style: normal;
+        margin-top: 400px;
+}
+/* Header */
+/* Page Content*/
+  /* Breadcrumb */
+  
+.bike-breadcrumbs .breadcrumb{
+    background: transparent;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 10px;
+    font-family: 'poppins', sans-serif;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.breadcrumb-item a{
+    font-weight: 500;
+    color: #C4C4C4;
+}
+
+.breadcrumb-item.active{
+    font-weight: 500;
+    color: #171938;
+}
+
+.xzoom-container {
+    display: block;
+}
+
+.xzoom-container .xzoom {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.xzoom-gallery {
+    border-radius: 10px;
+}
+
+.bike-heading {
+    margin-top: 50px;
+}
+
+.bike-heading h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #152C5B;
+}
+
+.bike-heading p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 170%;
+    color: #B0B0B0;
+
+}
+  .bike-heading {
+    margin-top: 50px;
+}
+
+.bike-heading h1{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    color: #152C5B;
+}
+
+.bike-heading p{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 170%;
+    color: #B0B0B0;
+
+}
+
+
+    .bike-heading .card {
+    border: 1px solid #E5E5E5;
+    border-radius: 15px;
+}
+
+.bike-heading .booking-title {
+    font-weight: 500;
+    font-size: 20px;
+    color: #152C5B;
+}
+
+.bike-heading .booking-price {
+    font-weight: 500;
+    font-size: 36px;
+    color: #1ABC9C;
+}
+
+.bike-heading .subtitle {
+    color: #152C5B;
+    font-weight: 400;
+    margin-top: 12px;
+}
+
+.bike-heading .input-number .input-group{
+    background-color: white;
+}
+
+.bike-heading .input-group-text{
+    border: 0;
+    cursor: pointer;
+    color: white;
+    padding: 0;
+    border-radius: 4px !important;
+    font-size: 24px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    user-select: none;
+}
+
+.bike-heading .input-group-text.minus{
+    background-color: #E74C3C;
+}
+
+.bike-heading .input-group-text.plus{
+    background-color: #1ABC9C;
+}
+
+.bike-heading .input-group .form-control{
+    border: 1;
+    border-radius: 0;
+    outline: 0;
+    box-shadow: none;
+    background-color: #F5F6F8;
+    padding-top: 0.575rem;
+    padding-bottom: 0.575rem;
+    text-align: center;
+}
+
+.bike-heading .btn-booking {
+    background-color: #3252DF;
+    border-radius: 4px;
+}
+
+.bike-heading .btn-booking:hover {
+    background-color: #142fa7;
+    box-shadow: 0px 8px 15px rgba(50, 82, 223, 0.3);
+}
+
+.booking-page-1{
+    margin-bottom: 160px;
+}
+
+.stepper {
+    margin-top: 61px;
+    margin-bottom: 44px;
+}
+
+.title-booking {
+    color: #152C5B;
+    font-weight: 600;
+    font-size: 36px;
+}
+
+.subtitle-booking {
+    color: #B0B0B0;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.brand-book {
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 10px;
+    color: #152C5B;
+}
+.price-book {
+    font-weight: 300;
+    font-size: 20px;
+    padding-left: 60px;
+    color: #152C5B;
+}
+
+.form-booking label{
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    color: #152C5B;
+}
+
+.form-booking .input-group {
+    background-color: white;
+}
+
+.form-booking .input-group .form-control{
+    border: 0;
+    background: #F5F6F8;
+    border-radius: 10px;
+    outline: 0;
+    box-shadow: none;
+    padding-top: 0.575rem;
+    padding-bottom: 0.575rem;
+}
+.form-booking .input-group .custom-file .custom-file-input{
+    border: 0;
+    background: #F5F6F8;
+    border-radius: 10px;
+    outline: 0;
+    box-shadow: none;
+    padding-top: 0.575rem;
+    padding-bottom: 0.575rem;
+}
+
+.form-booking .input-group .form-control::placeholder{
+    background: #F5F6F8;
+}
+
+.btn-continue-booking {
+    border: 0;
+    color: white;
+    background: black;
+    border-radius: 5px;
+}
+.btn-continue-booking:hover {
+    color: #000000;
+    background: #cdcdcd;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+}
+
+.btn-cancel-booking {
+    margin-top: 5px;
+    border: 0;
+    color: #B3B3B3;
+    background: #F5F6F8;
+    border-radius: 5px;
+}
+.btn-cancel-booking:hover {
+    color: #000000;
+    background: #cdcdcd;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.25);
+}
+/* Akhir Page Content */
+
+/* footer */
+#footer {
+    width: 100%;
+    background-color: black;
+    margin-top: 100px;
+}
+#footer h1 {
+    color: white;
+    padding-top: 30px;
+    font-family: "Ramaraja", serif;
+}
+#footer p {
+    color: white;
+}
+.icons i {
+    color: #c2d1ef;
+    font-size: 30px;
+    cursor: pointer;
+}
+.copyright {
+    color: white;
+    margin-top: 20px;
+}
+.crediter {
+    color: white;
+}
+/* footer */
+</style>
